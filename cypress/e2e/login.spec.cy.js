@@ -41,5 +41,9 @@ describe('template spec', () => {
   .should('equal', 'test-example')
   cy.go('back')
   })
-  
+
+  it('second test on first branch', () => {
+    cy.visit('https://example.cypress.io')
+    cy.get('h1').should('be.visible').and('have.text', 'Kitchen Sink')
+  })
 })

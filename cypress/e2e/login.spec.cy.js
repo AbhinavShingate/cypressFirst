@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('first test', () => {
     cy.visit('https://example.cypress.io')
     cy.get('h1').should('be.visible').and('have.text', 'Kitchen Sink')
     cy.request('https://jsonplaceholder.cypress.io/comments')
